@@ -1,0 +1,36 @@
+
+class Solution:
+    def isValid(self, s: str) -> bool:
+        """
+
+        Goal: Check if the input string s is a valid parentheses string or not.
+
+        Quick exit, when finding one empty closing bracket.
+
+        1. Iterate through the string s, and utilize if statement to check valid brackets.
+        2. Return False if one invalid parentheses is found.
+        
+        Easy case:
+        Return False if the string s has an odd length.
+
+        """
+
+        # Easy case
+        if len(s)%2 != 0: return False
+
+        memo = []
+
+        for i in range(len(s)):
+            if s[i] in ('(','[','{'):
+                memo.append(s[i])
+            else:
+                if not memo: return False
+                if s[i] == ')':
+                    if memo.pop() != '(': return False
+                elif s[i] == ']':
+                    if memo.pop() != '[': return False
+                elif s[i] == '}':
+                    if memo.pop() != '{': return False
+
+        if memo: return False
+        return True
