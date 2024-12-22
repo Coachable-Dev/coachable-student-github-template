@@ -15,11 +15,11 @@ class Solution:
         #We will be storing the frequencies in this other hashmap
         freqs = {}
         #Time Complexity: O(n)
-        for chr in word:
-            if chr in counting:
-                counting[chr] +=1
+        for char in word:
+            if char in counting:
+                counting[char] +=1
             else:
-                counting[chr] = 1
+                counting[char] = 1
         #Time Complexity: O(n)
         for fr in counting.values():
             if fr in freqs:
