@@ -21,10 +21,9 @@ class Solution:
         # will yield the maximum product in such cases.
         # Specifically: nums[0] * nums[1] * nums[-1].
 
-        #Given these two possible options for both all positive/negative 
+        #Given these two possible options for both all positive/negative
         #integers and mixed positive
-        #and negative integers we will return the one which yields 
+        #and negative integers we will return the one which yields
         #the largest product of three numbers.
         return max( nums[-1] * nums[-2] * nums[-3],
                     nums[0] * nums[1] * nums[len(nums)-1])
-
