@@ -26,5 +26,9 @@ class Solution:
                 # Update the target to the current index `i`
                 # because it's now the furthest we need to reach.
                 target = i
+        
+        if target == 0:
+            return True
+        else:
+            return False
 
-        return True test target == 0 else False
