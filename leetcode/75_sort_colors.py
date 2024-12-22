@@ -28,8 +28,7 @@ class Solution:
         # We will now iterate through the `count` array to overwrite nums.
         # Start from index 0 and place the correct number of each color in order.
         index = 0
-        for i in range(len(count)):
-            for _ in range(count[i]):
+        for i,color in enumerate(count):
+            for _ in range(color):
                 nums[index] = i
                 index +=1
-
