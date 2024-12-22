@@ -34,6 +34,5 @@ class Solution:
             f1 = min(freqs.keys())
             f2 = max(freqs.keys())
             return (f1 + 1 == f2 and freqs[f2] == 1) or (f1 == 1 and freqs[f1] == 1)
-        
         return False
 
