@@ -40,5 +40,4 @@ class Solution:
         #Time Complexity O(n) + O(m) + O(k) = O(n + m +k)
         #Space Complexity O(n) + O(m) + O(k) = O(n + m +k)
         return result + endArray
-        
 
