@@ -1,6 +1,6 @@
 #Loom: https://www.loom.com/share/6b15a791d545442789efae67caf503f6
 class Solution:
-    def relativeSortArray(self, arr1: list[int], arr2: list[int]) -> List[int]:
+    def relativeSortArray(self, arr1: list[int], arr2: list[int]) -> list[int]:
         count_Array1 = {}
         endArray = []
         result = []
