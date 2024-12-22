@@ -1,14 +1,22 @@
-#Loom: https://www.loom.com/share/ce2e6b5bdc4942d5b97c5614732741cc
+"""75. Sort Colors Dijkstra's Dutch National Flag Problem"""
 class Solution:
     def sortColors(self, nums: list[int]) -> None:
         """
         Do not return anything, modify nums in-place instead.
+        #This function sorts an array containing three possible colors represented as 0, 1, and 2. 
+        #Using Dijkstra's algorithm (Dutch National Flag Problem), the sorting is performed in-place 
+        #with the help of three pointers:
+        #- `l`: Tracks the boundary for 0s.
+        #- `r`: Tracks the boundary for 2s.
+        #- `i`: Iterates through the array.
+        #The algorithm swaps elements as needed to ensure that all 0s are at the start, 
+        #all 2s are at the end, and 1s are in the middle.
+        #Loom: https://www.loom.com/share/ce2e6b5bdc4942d5b97c5614732741cc
         """
         #Using Dijkstra's algorithm (Dutch National Flag Problem)
         #I'll initialize both a left and right pointer
         l,r = 0, len(nums) -1
         i = 0
-
         #We will have to perform swapping alongisde our problem
         #So we will use an helper function to perform it
         def swap(i,j):

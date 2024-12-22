@@ -1,9 +1,12 @@
+"""628. Maximum Product of Three Numbers"""
 #loom: https://www.loom.com/share/b7ce6f18baac4ddfa9cfae3fe37aed0c
 class Solution:
     def maximumProduct(self, nums: list[int]) -> int:
+        """
+        #Finds the maximum product of three numbers in the given list.
+        """
         #Time Complexity: O(n log n)
         #Space Complexity: O(1)
-
         #Step 1: Sort the array
         nums = sorted(nums)
         # Step 2: Consider two possible options to calculate the maximum product:
@@ -11,7 +14,6 @@ class Solution:
         # This works because if the array contains only positive numbers, 
         # the three largest numbers will yield the maximum product.
         # Specifically: nums[-1] * nums[-2] * nums[-3].
-
         # Option 2: Use the first two elements and the last element.
         # This works if the array contains negative numbers. 
         # Two negative numbers multiplied together give a positive result, 

@@ -1,6 +1,12 @@
-#Loom: https://www.loom.com/share/49b3a7e8faf14012b274297443082570?sid=febff73b-da83-4333-b3e6-32789ee123a3
+"""57. Insert Interval"""
 class Solution:
-    def insert(self, intervals: list[List[int]], newInterval: List[int]) -> List[List[int]]:
+    def insert(self, intervals: list[list[int]], newInterval: list[int]) -> list[list[int]]:
+        """
+        # This function inserts a new interval into a list of sorted, non-overlapping intervals
+        #and merges any overlapping intervals to ensure that the resulting intervals remain
+        #sorted and non-overlapping.
+        #Loom: https://www.loom.com/share/49b3a7e8faf14012b274297443082570?sid=febff73b-da83-4333-b3e6-32789ee123a3
+        """
         #We will start by declaring an empty array that we will use to store the result
         result = []
         #Time Complexity: O(n)

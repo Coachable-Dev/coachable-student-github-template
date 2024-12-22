@@ -3,6 +3,7 @@ class Solution:
     """Solution Class"""
     def subdomainVisits(self, cpdomains: list[str]) -> list[str]:
         """
+        #This function calculates the number of visits for each subdomain and its parent domains.
         #Loom explanation: https://www.loom.com/share/907a5311a24b45aa91c24296188ae424
         """
         #To first create an hashmap where I will be tracking

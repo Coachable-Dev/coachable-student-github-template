@@ -1,8 +1,12 @@
-#Loom: https://www.loom.com/share/ce2e6b5bdc4942d5b97c5614732741cc
+"""75. Sort Colors"""
 class Solution:
     def sortColors(self, nums: list[int]) -> None:
         """
-        Do not return anything, modify nums in-place instead.
+        #This function implements the Dutch National Flag problem using Bucket Sort to sort an array containing 
+        #three distinct values: 0, 1, and 2. It first counts the occurrences of each value in a fixed-size array 
+        #(bucket). Then, it overwrites the original array with the sorted values based on the counts.
+
+        #Loom: https://www.loom.com/share/ce2e6b5bdc4942d5b97c5614732741cc
         """
         # Time Complexity: O(n)
         # Space Complexity: O(1)

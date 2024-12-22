@@ -1,5 +1,11 @@
-#Loom: https://www.loom.com/share/7437e32fbfb34816aad0d5b850e9e8c5?sid=7b0fe657-a357-4891-989c-eadbb56c5e2a
+"""2423. Remove Letter To Equalize Frequency"""
 class Solution:
+    """
+    This function determines if removing one character can make the frequency 
+    of all other characters equal. It uses two hashmaps: one to count occurrences 
+    of each character and another to track frequency counts.
+    #Loom: https://www.loom.com/share/7437e32fbfb34816aad0d5b850e9e8c5?sid=7b0fe657-a357-4891-989c-eadbb56c5e2a
+    """
     def equalFrequency(self, word: str) -> bool:
         #We will start by counting the occurrences of each char 
         counting = {}

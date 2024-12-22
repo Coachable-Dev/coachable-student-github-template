@@ -3,6 +3,9 @@ class Solution:
     """Solution Class"""
     def reformatDate(self, date: str) -> str:
         """
+        #This function converts a date in the format 'Day Month Year' into the format 'YYYY-MM-DD'.
+        #It handles converting the day to two digits, mapping month names to numeric values, 
+        #and reconstructing the formatted string.
         #Loom Explanation: https://www.loom.com/share/d57df9ca5f174c35be7be5b00e3c4f29
         """
         #First we need to split our given date

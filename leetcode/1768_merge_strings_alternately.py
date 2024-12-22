@@ -3,6 +3,9 @@ class Solution:
     """Solution Class"""
     def mergeAlternately(self, word1: str, word2: str) -> str:
         """
+        #This function merges two strings alternately, appending characters 
+        #from word1 and word2 one by one. If one string is longer, the 
+        #remaining characters are appended at the end.
         #Loom explanation:
         #https://www.loom.com/share/
         #b5fa34deb0ad435bbee2ed6879ca43e7?sid=2b1f2195-e382-4431-af47-f37d9e1e2de8
