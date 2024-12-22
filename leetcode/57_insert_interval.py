@@ -19,7 +19,7 @@ class Solution:
                 result.append(newInterval)
                 return result + intervals[i:]
 
-            elif newInterval[0] > interval[1]:
+            if newInterval[0] > interval[1]:
                 result.append(interval)
             #We also have to merge the overlapping interval/newInterval
             else:
@@ -27,5 +27,3 @@ class Solution:
                                max(intervals[i][1], newInterval[1]))
         result.append(newInterval)
         return result
-
-
