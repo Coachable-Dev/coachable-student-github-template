@@ -38,6 +38,5 @@ class Solution:
                 r -= 1
             else:
             #We will assume that the other number will be in
-            #In their right position   
+            #In their right position
                 i+=1
-
