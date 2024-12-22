@@ -1,6 +1,7 @@
 """986. Interval List Intersections"""
 class Solution:
-    def intervalIntersection(self, firstList: list[list[int]], secondList: list[list[int]]) -> list[list[int]]:
+    def intervalIntersection(self, firstList: list[list[int]],
+                            secondList: list[list[int]]) -> list[list[int]]:
         """
         #This function computes the intersection of two lists of intervals.
         #Loom: https://www.loom.com/share/1586f6f15bde4570acceaeb9f3267d83
@@ -12,11 +13,11 @@ class Solution:
         #Time Complexity O(n + m)
         #Space Complexity O(n)
         if (len(firstList) == 0 or len(secondList) == 0):
-            return [] 
+            return []
         #To start iterating using a while loop untill p1< len(firstList) or p2< len(secondList)
         while (p1<len(firstList) and p2<len(secondList)):
             start1, end1 = firstList[p1]
-            start2, end2= secondList[p2]    
+            start2, end2= secondList[p2]
             if start1 > end2:
                 p2 += 1
             elif start2 > end1:
