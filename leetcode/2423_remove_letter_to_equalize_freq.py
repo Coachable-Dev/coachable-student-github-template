@@ -1,4 +1,5 @@
 """2423. Remove Letter To Equalize Frequency"""
+
 class Solution:
     """
     This function determines if removing one character can make the frequency 
