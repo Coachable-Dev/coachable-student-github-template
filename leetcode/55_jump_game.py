@@ -27,5 +27,3 @@ class Solution:
                 # because it's now the furthest we need to reach.
                 target = i
         return target == 0
-
-
