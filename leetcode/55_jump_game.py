@@ -1,7 +1,13 @@
-#Loom: https://www.loom.com/share/3ad998725e1c474cb0f5f0be9323139f
-
+"""55. Jump Game"""
 class Solution:
+    """Solution Class"""
     def canJump(self, nums: list[int]) -> bool:
+        """
+        #This function determines if it is possible to jump from the first index of the array 
+        #to the last index. The solution uses a greedy approach by working backward from the 
+        #last index and checking if the current index can "jump" to or beyond the target index.
+        #Loom: https://www.loom.com/share/3ad998725e1c474cb0f5f0be9323139f
+        """
         #Time Complexity: O(n)
         #Space Complexity: O(1)
 
@@ -17,7 +23,7 @@ class Solution:
 
         for i in range(len(nums)-1, -1,-1):
             if nums[i] + i >= target:
-                # Update the target to the current index `i` 
+                # Update the target to the current index `i`
                 # because it's now the furthest we need to reach.
                 target = i
 
