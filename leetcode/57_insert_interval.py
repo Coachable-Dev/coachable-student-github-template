@@ -14,16 +14,17 @@ class Solution:
         #Space Complexity: O(n)
         #We want to iterate over the range of intervals and check whether
         #First I'll be checkign that newInterval[1] is smaller than the start of my first interval
-        for i in range(len(intervals)):
-            if newInterval[1] < intervals[i][0]:
+        for i,interval in enumerate(intervals):
+            if newInterval[1] < interval[0]:
                 result.append(newInterval)
                 return result + intervals[i:]
 
-            elif newInterval[0] > intervals[i][1]:
-                result.append(intervals[i])
+            elif newInterval[0] > interval[1]:
+                result.append(interval)
             #We also have to merge the overlapping interval/newInterval
             else:
-                newInterval = (min(intervals[i][0], newInterval[0]), max(intervals[i][1], newInterval[1]))
+                newInterval = (min(intervals[i][0], newInterval[0]),
+                               max(intervals[i][1], newInterval[1]))
         result.append(newInterval)
         return result
 
