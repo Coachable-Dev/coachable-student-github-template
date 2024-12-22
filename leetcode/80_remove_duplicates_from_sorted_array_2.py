@@ -2,7 +2,8 @@
 class Solution:
     def removeDuplicates(self, nums: list[int]) -> int:
         """
-        #Removes duplicates from the sorted array `nums`, allowing at most two occurrences of any element.
+        #Removes duplicates from the sorted array `nums`,
+        #allowing at most two occurrences of any element.
         #Loom: https://www.loom.com/share/16734f04846f4f3bbdfb590576c50b1d
         """
         #I aim to solve this problem with a Time Complexity O(n)
@@ -20,5 +21,3 @@ class Solution:
                 i+=1
             k+=1
         return i
-
-        
