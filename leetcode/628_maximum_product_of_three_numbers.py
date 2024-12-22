@@ -15,14 +15,16 @@ class Solution:
         # the three largest numbers will yield the maximum product.
         # Specifically: nums[-1] * nums[-2] * nums[-3].
         # Option 2: Use the first two elements and the last element.
-        # This works if the array contains negative numbers. 
-        # Two negative numbers multiplied together give a positive result, 
-        # and multiplying them with the largest positive number (nums[-1]) 
+        # This works if the array contains negative numbers.
+        # Two negative numbers multiplied together give a positive result,
+        # and multiplying them with the largest positive number (nums[-1])
         # will yield the maximum product in such cases.
         # Specifically: nums[0] * nums[1] * nums[-1].
 
-        #Given these two possible options for both all positive/negative integers and mixed positive
-        #and negative integers we will return the one which yields the largest product of three numbers.
+        #Given these two possible options for both all positive/negative 
+        #integers and mixed positive
+        #and negative integers we will return the one which yields 
+        #the largest product of three numbers.
         return max( nums[-1] * nums[-2] * nums[-3],
                     nums[0] * nums[1] * nums[len(nums)-1])
 
