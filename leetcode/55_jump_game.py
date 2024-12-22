@@ -27,4 +27,4 @@ class Solution:
                 # because it's now the furthest we need to reach.
                 target = i
 
-        return True if target == 0 else False
+        return True test target == 0 else False
