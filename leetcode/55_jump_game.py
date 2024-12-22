@@ -25,8 +25,7 @@ class Solution:
             if nums[i] + i >= target:
                 # Update the target to the current index `i`
                 # because it's now the furthest we need to reach.
-                target = i        
-        if target == 0:
-            return True
-        else:
-            return False
+                target = i
+        return target == 0
+
+
