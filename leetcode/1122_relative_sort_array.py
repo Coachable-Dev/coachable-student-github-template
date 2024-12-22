@@ -6,7 +6,6 @@ class Solution:
         order, followed by the rest of the elements from arr1 sorted in ascending order.
         #Loom: https://www.loom.com/share/6b15a791d545442789efae67caf503f6
         """
-
         count_Array1 = {}
         endArray = []
         result = []
