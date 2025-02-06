@@ -1,0 +1,22 @@
+name: PR Notification
+
+on:
+  pull_request:
+    types:
+      - opened
+
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send Webhook Notification
+        run: |
+          curl -X POST "https://n2gsf933du.us-east-1.awsapprunner.com/api/github/pr-opened-webhook" \
+               -H "Content-Type: application/json" \
+               -d '{
+                 "repo": "${{ github.repository }}",
+                 "pr_number": "${{ github.event.pull_request.number }}",
+                 "pr_url": "${{ github.event.pull_request.html_url }}",
+                 "student": "${{ github.actor }}"
+               }'
